@@ -25,6 +25,12 @@ cont_argentina = 0
 cont_colombia = 0
 cont_peru = 0
 cont_mexico = 0
+suma_edades = 0
+
+
+cont_man = 0
+cont_woman = 0
+
 
 
 for n_list in lista:
@@ -47,7 +53,7 @@ paises = set(pais)
 ciudades = set(ciudad)
 generos = set(genero)
 
-print(paises)
+
 
 for i in range(len(pais)):
     if pais[i] == 'Chile':
@@ -68,19 +74,31 @@ for i in range(len(pais)):
     if pais[i] == 'Perú':
         cont_peru += 1
  
-print(f'Chile tiene en esta lista {cont_chile} personas')
+'''print(f'Chile tiene en esta lista {cont_chile} personas')
 print(f'Argentina tiene en esta lista {cont_argentina} personas')
 print(f'España tiene en esta lista {cont_espana} personas')
 print(f'Colombia tiene en esta lista {cont_colombia} personas')
 print(f'Mexico tiene en esta lista {cont_mexico} personas')
-print(f'Peru tiene en esta lista {cont_peru} personas')
+print(f'Peru tiene en esta lista {cont_peru} personas')'''
+
+for i in range(len(genero)):
+    if genero[i] == 'Hombre':
+        cont_man += 1
+
+    if genero[i] == 'Mujer':
+        cont_woman += 1
 
 
+'''print(f'Total Hombres: {cont_man} - Total Mujeres: {cont_woman}')'''
 
 
+for i in edades:
+    suma_edades = suma_edades + int(i) 
 
+print(suma_edades)
 
-
+promedio = suma_edades/len(edades)
+print(promedio)
 
 
 
