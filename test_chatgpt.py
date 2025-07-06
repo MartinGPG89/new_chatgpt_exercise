@@ -19,7 +19,12 @@ pais = []
 ciudad = []
 genero = []
 
-
+cont_espana = 0
+cont_chile = 0
+cont_argentina = 0
+cont_colombia = 0
+cont_peru = 0
+cont_mexico = 0
 
 
 for n_list in lista:
@@ -36,21 +41,39 @@ pais = pais[1:]
 ciudad = ciudad[1:]
 genero = genero[1:]
 
-
-
-
 # Imprimir todos los países distintos
-
 
 paises = set(pais)
 ciudades = set(ciudad)
 generos = set(genero)
 
-print(generos, paises, ciudades)
+print(paises)
 
+for i in range(len(pais)):
+    if pais[i] == 'Chile':
+        cont_chile += 1
 
+    if pais[i] == 'Argentina':
+        cont_argentina += 1
 
+    if pais[i] == 'España':
+        cont_espana +=1
 
+    if pais[i] == 'Colombia':
+        cont_colombia +=1
+
+    if pais[i] == 'México':
+        cont_mexico += 1
+
+    if pais[i] == 'Perú':
+        cont_peru += 1
+ 
+print(f'Chile tiene en esta lista {cont_chile} personas')
+print(f'Argentina tiene en esta lista {cont_argentina} personas')
+print(f'España tiene en esta lista {cont_espana} personas')
+print(f'Colombia tiene en esta lista {cont_colombia} personas')
+print(f'Mexico tiene en esta lista {cont_mexico} personas')
+print(f'Peru tiene en esta lista {cont_peru} personas')
 
 
 
