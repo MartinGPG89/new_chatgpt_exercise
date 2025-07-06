@@ -15,7 +15,7 @@ lista = fichero.readlines()
 
 nueva_lista = []
 edades = []
-paises = []
+pais = []
 ciudad = []
 genero = []
 
@@ -27,17 +27,26 @@ for n_list in lista:
 
 for campos  in nueva_lista:
     edades.append(campos[0])
+    pais.append(campos[1])
+    ciudad.append(campos[2])
+    genero.append(campos[3])
 
 edades = edades [1:]
-
-print(edades)
-
-
-#Imprimir solo la primera columna (edad) de cada fila (sin la cabecera).
+pais = pais[1:]
+ciudad = ciudad[1:]
+genero = genero[1:]
 
 
 
 
+# Imprimir todos los países distintos
+
+
+paises = set(pais)
+ciudades = set(ciudad)
+generos = set(genero)
+
+print(generos, paises, ciudades)
 
 
 
