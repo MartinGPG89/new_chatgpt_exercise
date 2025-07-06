@@ -24,10 +24,16 @@ fichero = io.open("chatgpt.csv", "r", encoding = "utf-8")
 
 lista = fichero.readlines()
 
-#EJERCICIO 1
 
+#EJERCICIO 1
 print(lista[1:])
 
+
+#EJERCICIO 
+#recorrer la lista con un bucle for para imprimir cada línea por separado (queda más limpio en la terminal).
+
+for n_list in lista:
+    print(n_list.strip())
 
 
 
